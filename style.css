@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------1st page-------- */
+
+.background{
+    background-color: yellow;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+}
+.text{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 180px;
+}
+.num{
+    padding: 103px 24px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(92, 130, 174);
+    margin: 20px;
+    animation: sample 2s infinite alternate;
+    transition: 1s ease;
+}
+.container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 180px;
+    
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(156, 126, 176);
+    margin: 20px;
+    animation: sample2 2s infinite alternate;
+    transition: 1s ease;
+}
+.container4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 180px;
+    
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(92, 130, 174);
+    margin: 25px;
+    animation: sample3 2s infinite alternate;
+    transition: 1s ease; 
+}
+.container5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 180px;
+    margin-top: 50px;
+    
+}
+.box4{
+    height: 70px;
+    width: 140px;
+    background-color: pink;
+    border: 2px solid red;
+    margin: 25px;
+    animation: sample4 1.9s infinite alternate;
+    transition: 1s ease;   
+}
+.box5{
+    height: 110px;
+    width: 30px;
+    margin-left: 75px; 
+    background-color: rgb(149, 103, 192);
+    border: 2px solid purple;
+    animation: sample5 2s infinite alternate;
+    transition: 1s ease; 
+}
+.box6{
+    height: 110px;
+    width: 110px;
+    margin-left: 85px; 
+    background-color: cadetblue;
+    border: 2px solid green;
+    animation: sample6 2s infinite alternate;
+    transition: 1s ease; 
+}
+.lets{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+@keyframes sample {
+    0%{
+        transform: skew(30deg);
+      }
+    100%{ 
+        transform: skew(-30deg);
+    }
+}
+@keyframes sample2 {
+    0%{
+        transform: skewY(30deg);
+      }
+    100%{
+        transform: skewY(-30deg);
+    }
+}
+@keyframes sample3 {
+    0%{
+        transform: rotate(30deg);
+      }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes sample4{
+    0%{
+        transform: scaleY(1.8);
+    }
+    100%{
+        transform: translateX(-2);
+    }
+}
+@keyframes sample5{
+    0%{
+        transform: scaleX(4);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+@keyframes sample6{
+    0%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(240deg);
+    }
+}
+  
+/* ***-----second-page-------*** */
+body{
+    background-color: yellow;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -60px;
+}
+.green-box{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(5, 247, 13, 0.532);
+     margin: 20px;
+     transition: 3s; 
+}
+.green-box:hover{
+   transition: 2s;
+   width: 300px;
+}
+.green-box2:hover{
+    transition: 4s;
+    height: 300px;
+    width: 300px;
+ }
+ a{
+    font-size: 30px;
+ }
+.anchor1{
+    color: blueviolet;
+}
+.anchor2{
+    color: blue;
+}
+
+/* --------3rd page-------- */
+
+body{
+        margin: 0;
+        padding: 0;
+        border: 10px solid;
+        border-color: white green white orange;
+     }
+ .sky{
+    height: 100vh; 
+    background-image: url(./img/sky.jpg);
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+ } 
+ .nav-text{
+    display: flex;
+ justify-content: center;
+    gap: 10px;
+ } 
+  .happy{
+    font-size: 40px;
+    background-color: orange;
+  } 
+  .inde{
+    font-size: 40px;
+    background-color: white;
+  }
+  .day{
+    font-size: 40px;
+    background-color: rgb(60, 125, 20); 
+  }
+
+  .sun{
+    height: 140px;
+    width: 150px;
+    background-image: url(./img/sun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    mix-blend-mode: multiply;
+    position: absolute;
+    right: 149px;
+    /* opacity: 0.5; */
+    animation:sunlight 21s linear infinite;
+    transition: 1s;
+   
+  }
+  @keyframes sunlight {
+   
+   0%{
+      transform: translatex(110px);
+   
+   } 
+   100% {
+        transform: translateX(-100px);
+        
+    }
+    
+  }
+  .city{
+    background-image: url(./img/city.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 250px;
+     width: 500%;
+     display: block;
+     animation:city 45s linear infinite;
+}
+@keyframes city {
+    100%{
+        transform: translateX(-4000px);
+       }   
+}
+  .road{
+    background-image: url(./img/road.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    z-index: 2;
+    height: 200px;
+     width: 500%;
+     display: block;
+     left:0;
+     right: 0;
+     bottom: 0;
+     animation: highway 7s linear infinite;
+  }
+  @keyframes highway {
+    100%{
+        transform: translatex(-3000px);
+    }
+}
+  .car{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+  }
+  .car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+  }
+  @keyframes car
+ {
+    100%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-2px);
+    }
+  }
+  .flag{
+    position: absolute;
+    background-image: url(./img/Tiranga1.svg);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 72px;
+    left: 854px;
+    bottom: 192px;
+    z-index: 2;
+  }
+  .wheel{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    }
+ .wheel img{
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+ }
+ .L-wheel{
+    left: -165px;
+    position: absolute;
+   
+ }
+ .R-wheel{
+    left: 80px;
+    position: absolute;
+ }
+@keyframes wheel
+{
+    100%{
+       transform: rotate(360deg);
+    }
+}
